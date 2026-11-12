@@ -21,9 +21,14 @@ public class SpringDataFxCs10Application implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Person person =  new Person();
+        /*Person person =  new Person();
         person.setName("Dávid");
-        person.setDateOfBirth(LocalDate.of(2003,5,9));
+        person.setDateOfBirth(LocalDate.of(2003,5,9));*/
+
+        Person person = Person.builder()
+                            .name("Jack")
+                            .dateOfBirth(LocalDate.of(2004,11,12))
+                        .build();
 
         personRepository.save(person);
     }
