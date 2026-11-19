@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="hu.unideb.inf.springdatafx_cs10.frontend.MainPageController"
-            prefHeight="400.0" prefWidth="600.0">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hu.unideb.inf.springdatafx_cs10.frontend.MainPageController">
+   <children>
+      <Button layoutX="250.0" layoutY="74.0" mnemonicParsing="false" onAction="#startBackend" text="Start">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="250.0" layoutY="163.0" mnemonicParsing="false" onAction="#printData" text="Print">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+      <Button layoutX="250.0" layoutY="251.0" mnemonicParsing="false" onAction="#stopBackend" text="Stop">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Button>
+   </children>
 </AnchorPane>
