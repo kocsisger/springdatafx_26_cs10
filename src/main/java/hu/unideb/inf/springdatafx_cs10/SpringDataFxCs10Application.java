@@ -32,4 +32,8 @@ public class SpringDataFxCs10Application implements CommandLineRunner {
 
         personRepository.save(person);
     }
+
+    public void printData(){
+        System.out.println("Printing data on the backend...");
+    }
 }

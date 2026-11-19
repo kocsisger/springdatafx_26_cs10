@@ -13,6 +13,10 @@ public class JavaFXApplication extends Application {
                 getClass().getResource("/fxml/MainPage.fxml"));
         stage.setScene(new Scene(root));
         stage.show();
+    }
 
+    @Override
+    public void stop() throws Exception {
+        super.stop();
     }
 }
